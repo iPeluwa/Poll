@@ -11,7 +11,7 @@ console.log('adding user');
 userCollection.create(reqObject,err=>{
     if(err){
         console.log('err :',err);
-        res.send('Error during adding user');
+        res.send('Error adding user');
     }
     else{res.json('User Added Successfully')}
 });
@@ -72,7 +72,7 @@ var poll=await pollCollection.create({
 },async (err,doc)=>{
     if(err){
         console.log(err);
-        console.log('error inside pollcreation :line 65');
+        console.log('error in pollcreation :line 65');
         res.send('error while adding poll');
     }
     else if(doc){

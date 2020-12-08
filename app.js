@@ -13,7 +13,7 @@ app.use(function(req, res, next) {
     next();
   });
 
-app.get('/',(req,res)=>{console.log("incoming request is :",req.method,req.body);res.json('Welcome to cool Polling web platform(backend)')});  
+app.get('/',(req,res)=>{console.log("incoming request is :",req.method,req.body);res.json('Welcome to Bu Polling System BE')});  
 /////routing middleware////
 app.use('/',require('./controllers/userRoutes'));
 //app.use(require('./utils/jwtmiddleware'));
